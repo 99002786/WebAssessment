@@ -1,0 +1,4 @@
+[{"userId":1,"userName":"Megha","userCity":"Mysore","userEmail":"megha@gmail.com","userPhone":"9894556998"},
+    {"userId":2,"userName":"Rohan","userCity":"Chennai","userEmail":"rohan@gmail.com","userPhone":"9894556955"},
+    {"userId":3,"userName":"Rekha","userCity":"Manglore","userEmail":"rekha@gmail.com","userPhone":"9955225895"},
+    {"userId":"4","userName":"Akaash","userCity":"Banglore","userEmail":"akaash@gmail.com","userPhone":"9894556998"}]

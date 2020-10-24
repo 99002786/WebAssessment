@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebForm</title>
+</head>
+<body>
+    <header>
+        <!-- <nav>
+            <a href="assesssub1.html">Web Forms</a>
+        </nav> -->
+        <script>
+            <div> <span id="display"></span></div>
+            let localstorage;
+            localStorage.setItem("name","megha");
+            function addentry(){
+        
+              document.getElementById("entry").innerHTML=localStorage.getItem("name");
+              
+            }
+        </script>
+    </header>
+    <section>
+        <h2>Enter your details in this Web Form</h2> 
+    </section>
+    <section>
+        <form>
+            <p><input type="text" placeholder="Enter Your Name:" id="name"/></p>
+            <p><input type="email" placeholder="Enter Your Email:" id="email"/></p>
+            <p><input type="date" placeholder="Enter Your Date of Birth:" id="dob"/></p>
+            <p>
+                Enter Your Permanent Address:
+                <textarea id="address"></textarea>
+            </p>
+            <p>
+                <datalist id="lstStates">
+                    <option>Andhra Pradesh</option>
+                    <option>Madhya Pradesh</option>
+                    <option>Arunachal Pradesh</option>
+                    <option>Himachal Pradesh</option>
+                    <option>Assam</option>
+                    <option>Karnataka</option>
+                    <option>Bihar</option>
+                    <option>Kerala</option>
+                    <option>Tamil Nadu</option>
+                </datalist>
+                <input type="text" placeholder="Enter Your State:" list="lstStates"/>
+            </p>
+            <p><input type="tel" placeholder="Enter Your Contact No.:" id="phone"/></p>
+            <p>
+                Contact Phone Source: <input type="radio" name="billloc">Home<input type="radio" name="billloc">Office<input type="radio" name="billloc">Institute
+            </p>
+            <p>
+                Select Your Stream:<br/>
+                <select>
+                    <option>BE</option>
+                    <option>BSE</option>
+                    <option>BA</option>
+                    <option>PHD</option>
+                    <option>Masters</option>
+                </select>
+            </p>
+            <p>
+                Your Other Hobbies:
+                <input type="checkbox">Sports
+                <input type="checkbox">GYM
+                <input type="checkbox">Reading
+                <input type="checkbox">Cooking
+                <input type="checkbox">Handcrafts
+                <input type="checkbox">Gardening
+            </p>
+            <div>
+            <button onclick="addentry()">Enter</button>
+            </div>
+            
+            
+        </form>
+    </section>
+    <footer>
+        <hr/>
+        <i>&copy;Copyrights Sharanmegha.Inc-2020</i>
+    </footer>
+    
+</body>
+</html>
